@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ruan.bankemployee.activity.AuthenticationActivity">
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/ProgressBar"/>
+    <!--所在银行-->
+    <TextView
+        android:id="@+id/tv_bank"
+        android:layout_width="match_parent"
+        android:text="所在银行"
+        style="@style/RegisterTextView"
+        />
+    <View
+        style="@style/RegisterView"
+        android:layout_below="@id/tv_bank"
+        />
+
+    <!--姓名-->
+    <TextView
+        android:layout_below="@+id/tv_bank"
+        android:id="@+id/tv_name"
+        android:text="姓名"
+        style="@style/RegisterTextView"
+        />
+    <EditText
+        android:id="@+id/et_name"
+        style="@style/RegisterEditText"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_below="@+id/tv_bank"
+        android:maxLength="6"
+        />
+
+    <View
+        style="@style/RegisterView"
+        android:layout_below="@id/tv_name"
+        />
+    <!--性别-->
+    <TextView
+        android:id="@+id/tv_time"
+        android:text="性别"
+        style="@style/RegisterTextView"
+        android:layout_below="@+id/tv_name"
+        />
+    <EditText
+        android:id="@+id/et_sex"
+        style="@style/RegisterEditText"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_below="@+id/tv_name"
+        android:maxLength="1"
+        />
+    <View
+        style="@style/RegisterView"
+        android:layout_below="@id/tv_time"
+        />
+    <!--年龄-->
+    <TextView
+        android:id="@+id/tv_age"
+        android:text="年龄"
+        style="@style/RegisterTextView"
+        android:layout_below="@id/tv_time"
+        />
+    <EditText
+        android:id="@+id/et_age"
+        style="@style/RegisterEditText"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_below="@id/tv_time"
+        android:maxLength="2"
+        android:inputType="number"
+        />
+    <View
+        style="@style/RegisterView"
+        android:layout_below="@id/tv_age"
+        />
+    <!--工号-->
+    <TextView
+        android:id="@+id/tv_number"
+        android:text="工号"
+        style="@style/RegisterTextView"
+        android:layout_below="@id/tv_age"
+        />
+    <EditText
+        android:id="@+id/et_number"
+        style="@style/RegisterEditText"
+        android:layout_toRightOf="@+id/tv_name"
+        android:layout_below="@id/tv_age"
+        android:maxLength="12"
+        />
+    <View
+        style="@style/RegisterView"
+        android:layout_below="@id/tv_number"
+        />
+    <TextView
+        android:id="@+id/tv_phone"
+        android:text="单位电话"
+        style="@style/RegisterTextView"
+        android:layout_below="@id/tv_number"
+        />
+    <EditText
+        android:id="@+id/et_phone"
+        style="@style/RegisterEditText"
+        android:layout_toRightOf="@+id/tv_phone"
+        android:layout_below="@id/tv_number"
+        android:maxLength="12"
+        android:inputType="phone"
+        android:hint="该项作为审核依据，填写务必真实"
+        />
+    <View
+        style="@style/RegisterView"
+        android:layout_below="@id/tv_phone"
+        android:id="@+id/view6" />
+<!--邮箱-->
+    <TextView
+        android:id="@+id/tv_email"
+        android:text="企业邮箱"
+        style="@style/RegisterTextView"
+        android:layout_below="@id/tv_phone"
+        />
+    <EditText
+        android:id="@+id/et_email"
+        style="@style/RegisterEditText"
+        android:layout_toRightOf="@+id/tv_phone"
+        android:layout_below="@id/tv_phone"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:hint="该项作为审核依据，填写务必真实"
+        />
+    <View
+        style="@style/RegisterView"
+        android:layout_below="@id/tv_email"
+        android:id="@+id/view7" />
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认以上信息真实有效"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/view7"
+        android:layout_alignStart="@+id/btn_commit" />
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_selector"
+        android:textColor="@color/white"
+        android:text="提交"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"/>
+
+<RelativeLayout
+    android:id="@+id/rl_info"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/btn_commit"
+    android:layout_margin="20dp"
+    android:visibility="gone"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="信息已提交，待审核"
+        android:textSize="35sp"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>
+
+
+
+</RelativeLayout>

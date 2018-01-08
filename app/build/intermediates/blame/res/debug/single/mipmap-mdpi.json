@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\marker48.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-mdpi\\marker48.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\location.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-mdpi\\location.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\marker36.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-mdpi\\marker36.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\location2.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-mdpi\\location2.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi\\ic_launcher_round.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    }
+]

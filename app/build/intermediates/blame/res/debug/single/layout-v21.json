@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout-v21\\notification_action.xml"
+    }
+]

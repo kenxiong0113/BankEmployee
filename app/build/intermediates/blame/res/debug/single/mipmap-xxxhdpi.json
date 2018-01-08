@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\welcome.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-xxxhdpi\\welcome.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher_round.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    }
+]

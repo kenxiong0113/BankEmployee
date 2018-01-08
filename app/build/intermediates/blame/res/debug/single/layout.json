@@ -1,0 +1,290 @@
+[
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_audit_result.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_audit_result.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_radio.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_dropdown_item_icons_2line.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_set_password.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_set_password.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_layout_snackbar.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\support_simple_spinner_dropdown_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_authentication.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_authentication.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_multichoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_template_lines_media.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\shifting_bottom_navigation_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\04c3a806e2dfd803af18372e4224cb3aeaa8bc08\\output\\res\\layout\\shifting_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_navigation_item_header.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bank_location.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_bank_location.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_subscribe.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\fragment_subscribe.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_my.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\fragment_my.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_bank.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\view_bank.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_template_part_time.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_toolbar.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_layout_tab_text.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\base_toolbar.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\base_toolbar.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media_custom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_template_media_custom.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_business.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\fragment_business.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_navigation_menu.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_media.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_template_media.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_screen_simple.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\select_dialog_item_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_alert_dialog_title_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_text_input_password_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_text_input_password_icon.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fixed_bottom_navigation_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\04c3a806e2dfd803af18372e4224cb3aeaa8bc08\\output\\res\\layout\\fixed_bottom_navigation_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bmob_update_dialog.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\layout\\bmob_update_dialog.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_content_include.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_screen_content_include.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_to_audit.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_to_audit.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_gv_bank.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\item_gv_bank.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_expanded_menu_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_menu_item.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bottom_navigation_bar_container.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\04c3a806e2dfd803af18372e4224cb3aeaa8bc08\\output\\res\\layout\\bottom_navigation_bar_container.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_welcome.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\layout\\abc_dialog_title_material.xml"
+    }
+]

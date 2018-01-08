@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">银行职员客户端</string>
+    <string name="title_business">业务</string>
+    <string name="title_subscribe">预约</string>
+    <string name="title_my">我的</string>
+    <drawable name="clr_normal">@color/colorPrimary</drawable>
+    <drawable name="clr_pressed">#BBDEFB</drawable>
+</resources>
