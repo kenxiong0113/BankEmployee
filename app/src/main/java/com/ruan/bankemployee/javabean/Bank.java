@@ -14,6 +14,15 @@ public class Bank extends BmobObject{
     private String bankName;
     private boolean state;
     private int img;
+    private String employeeObjectId;
+
+    public String getEmployeeObjectId() {
+        return employeeObjectId;
+    }
+
+    public void setEmployeeObjectId(String employeeObjectId) {
+        this.employeeObjectId = employeeObjectId;
+    }
 
     public int getImg() {
         return img;

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="?actionBarSize">
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/ProgressBar"
+        />
+    <RelativeLayout
+        android:id="@+id/r_layout_no"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请先完成认证，否则正常无法使用该功能"/>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/r_layout_yes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_bank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            />
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/red"
+            android:layout_below="@id/tv_bank"
+            />
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/srl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_above="@+id/btn_open_Windows"
+            >
+        <GridView
+            android:id="@+id/gv_windows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:numColumns="4"/>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+        <Button
+            android:id="@+id/btn_open_Windows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_open_windows"
+            android:textColor="@color/white"
+            android:text="开启窗口"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="40dp"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/btn_close_Windows"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_open_windows"
+            android:textColor="@color/white"
+            android:text="关闭窗口"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="40dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

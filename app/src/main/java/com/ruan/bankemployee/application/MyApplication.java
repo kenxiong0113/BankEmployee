@@ -25,7 +25,7 @@ public class MyApplication extends Application {
         }
         return instance;
     }
-    public static void eixt(){
+    public static void exit(){
         windows.clear();
     }
 }

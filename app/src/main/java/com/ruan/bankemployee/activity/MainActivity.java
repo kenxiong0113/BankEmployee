@@ -11,9 +11,9 @@ import android.view.Window;
 import com.ashokvarma.bottomnavigation.BottomNavigationBar;
 import com.ashokvarma.bottomnavigation.BottomNavigationItem;
 import com.ruan.bankemployee.R;
-import com.ruan.bankemployee.fragment.BusinessFragment;
+import com.ruan.bankemployee.fragment.WindowsFragment;
 import com.ruan.bankemployee.fragment.MyFragment;
-import com.ruan.bankemployee.fragment.SubscribeFragment;
+import com.ruan.bankemployee.fragment.WaitTobeFragment;
 import com.ruan.bankemployee.other.ExitPressed;
 
 import java.util.ArrayList;
@@ -23,9 +23,9 @@ import java.util.ArrayList;
  */
 public class MainActivity extends AppCompatActivity implements BottomNavigationBar.OnTabSelectedListener{
     BottomNavigationBar navigation;
-    BusinessFragment businessFragment;
+    WindowsFragment windowsFragment;
     MyFragment myFragment;
-    SubscribeFragment subscribeFragment;
+    WaitTobeFragment waitTobeFragment;
     private ArrayList<Fragment> fragments;
     private Context context;
 
@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         setContentView(R.layout.activity_main);
         initBottomNavigationBar();
         context =getApplicationContext();
-
     }
 
 
@@ -55,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
                 .initialise();
         setDefaultFragment();
         navigation.setTabSelectedListener(this);
-
     }
 
     /**
@@ -64,8 +62,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
     private void setDefaultFragment(){
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction transaction = fm.beginTransaction();
-        businessFragment = BusinessFragment.newInstance(getString(R.string.title_business));
-        transaction.replace(R.id.content, businessFragment);
+        windowsFragment = WindowsFragment.newInstance(getString(R.string.title_business));
+        transaction.replace(R.id.content, windowsFragment);
         transaction.commit();
 
     }
@@ -81,29 +79,26 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
         FragmentTransaction transaction = fm.beginTransaction();
         switch (position) {
             case 0:
-                businessFragment = BusinessFragment.newInstance(getString(R.string.title_business));
-                transaction.replace(R.id.content, businessFragment);
+                windowsFragment = WindowsFragment.newInstance(getString(R.string.title_business));
+                transaction.replace(R.id.content, windowsFragment);
                 break;
             case 1:
-                subscribeFragment = SubscribeFragment.newInstance(getString(R.string.title_subscribe));
-                transaction.replace(R.id.content, subscribeFragment);
+                waitTobeFragment = WaitTobeFragment.newInstance(getString(R.string.title_subscribe));
+                transaction.replace(R.id.content, waitTobeFragment);
                 break;
             case 2:
                 myFragment = MyFragment.newInstance(getString(R.string.title_my));
                 transaction.replace(R.id.content, myFragment);
                 break;
-
             default:
                 break;
         }
         // 事务提交
         transaction.commit();
-
     }
 
     @Override
     public void onTabUnselected(int position) {
-
         if (fragments != null) {
             if (position < fragments.size()) {
                 FragmentManager fm = getSupportFragmentManager();
@@ -118,7 +113,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationB
 
     @Override
     public void onTabReselected(int position) {
-
 
     }
     /**
