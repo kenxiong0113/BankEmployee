@@ -1,11 +1,11 @@
 [
     {
-        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_layout_tab_icon.xml"
-    },
-    {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar_include.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",

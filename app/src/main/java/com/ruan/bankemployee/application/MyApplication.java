@@ -13,6 +13,8 @@ import java.util.List;
 public class MyApplication extends Application {
     private static MyApplication instance;
     public static List<String> windows = new ArrayList<>();
+    public static int openWindows = 0;
+    public static String bankName = null;
 
     @Override
     public void onCreate() {

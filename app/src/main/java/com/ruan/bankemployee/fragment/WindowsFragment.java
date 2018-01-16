@@ -23,6 +23,7 @@ import com.ruan.bankemployee.R;
 import com.ruan.bankemployee.adapter.BankWindowsAdapter;
 import com.ruan.bankemployee.application.MyApplication;
 import com.ruan.bankemployee.javabean.Bank;
+import com.ruan.bankemployee.javabean.HeadCount;
 import com.ruan.bankemployee.javabean.User;
 
 import org.json.JSONException;
@@ -116,7 +117,6 @@ public class WindowsFragment extends Fragment {
      * 更新本地用户信息
      * 注意：需要先登录，否则会报9024错误
      * Synchronize local caching
-     *
      * @see ErrorCode#E9024S
      */
     public void fetchUserInfo() {
@@ -127,10 +127,12 @@ public class WindowsFragment extends Fragment {
                     try {
                         JSONObject object = new JSONObject(s);
                         bankName = object.getString("bankName");
+                        MyApplication.bankName = bankName;
                         if (object.getBoolean(identityVerified)) {
                             rLayoutYes.setVisibility(View.VISIBLE);
                             tvBank.setText(bankName);
                             checkTheNumberOfWindowsInTheCurrentBank();
+                            getOpenWindowsCount();
                         } else {
                             rLayoutNo.setVisibility(View.VISIBLE);
                         }
@@ -154,6 +156,21 @@ public class WindowsFragment extends Fragment {
     }
 
     @Override
+    public void onPause() {
+        super.onPause();
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+    }
+
+    @Override
     public void onResume() {
         super.onResume();
     }
@@ -166,7 +183,6 @@ public class WindowsFragment extends Fragment {
         gvWindows.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, final int position, long id) {
-
             //窗口设置最多16个
                 if (position == (windows.size()) && windows.size() == MAX_WINDOWS_SUM) {
                     Toast.makeText(getActivity(), "别添加了，你那里有这么多窗口吗", Toast.LENGTH_SHORT).show();
@@ -228,7 +244,7 @@ public class WindowsFragment extends Fragment {
         //返回50条数据，如果不加上这条语句，默认返回10条数据
         query.setLimit(20);
         //排序查询
-        query.order("-score,createdAt");
+        query.order("createdAt");
         //执行查询方法
         query.findObjects(new FindListener<Bank>() {
             @Override
@@ -237,14 +253,12 @@ public class WindowsFragment extends Fragment {
                     //获取窗口总数
                     sum = object.size();
                     for (Bank banks : object) {
-                        if (banks.isState() == true){
+                        if (banks.isState()){
                             windows.add(new Bank(banks.getWindows(),R.drawable.ic_windows_open));
                         }else {
                             Bank bank = new Bank(banks.getWindows(), R.drawable.ic_windows_close);
                             windows.add(bank);
                         }
-
-
                     }
                     Message message = new Message();
                     message.what = 0x0001;
@@ -320,6 +334,7 @@ public class WindowsFragment extends Fragment {
                         @Override
                         public void done(BmobException e) {
                             if (e == null) {
+                                MyApplication.openWindows = MyApplication.openWindows +1;
                                 windows.get(selectTheWindowNumber).setImg(R.drawable.ic_windows_open);
                                 adapter.notifyDataSetChanged();
                                 btnCloseWindows.setVisibility(View.VISIBLE);
@@ -340,7 +355,9 @@ public class WindowsFragment extends Fragment {
                     bank2.update(windowsObjectId, new UpdateListener() {
                         @Override
                         public void done(BmobException e) {
+                            Log.e("WindowsFragment", "2---" + MyApplication.openWindows);
                             if (e == null) {
+                                MyApplication.openWindows = MyApplication.openWindows -1;
                                 windows.get(selectTheWindowNumber).setImg(R.drawable.ic_windows_close);
                                 adapter.notifyDataSetChanged();
                                 btnCloseWindows.setVisibility(View.GONE);
@@ -364,11 +381,9 @@ public class WindowsFragment extends Fragment {
             @Override
             public void onRefresh() {
                 // TODO: 2018/1/10 设置刷新内容
-
                 srl.setRefreshing(false);
             }
         });
-
     }
 
     /**
@@ -388,8 +403,24 @@ public class WindowsFragment extends Fragment {
                     dialog.setMessage("正在开启......");
                     dialog.setCancelable(true);
                     dialog.show();
+                    Log.e("WindowsFragment", "1---" + MyApplication.openWindows);
+                    if (MyApplication.openWindows == 0){
+                            HeadCount headCount = new HeadCount();
+                            headCount.setCount(0);
+                            headCount.setBankName(bankName);
+                            headCount.save(new SaveListener<String>() {
+                                @Override
+                                public void done(String s, BmobException e) {
+                                    if (e == null){
+
+                                    }else {
+                                        Log.e("WindowsFragment", e.getMessage());
+                                        return;
+                                    }
+                                }
+                            });
+                        }
                     BmobQuery<Bank> query = new BmobQuery<Bank>();
-                    //查询playerName叫“比目”的数据
                     query.addWhereEqualTo("bankName", bankName);
                     query.addWhereEqualTo("windows", String.valueOf(selectTheWindowNumber + 1) + "号窗口");
                     //执行查询方法
@@ -405,12 +436,11 @@ public class WindowsFragment extends Fragment {
                                 dialog.dismiss();
                                 Log.e("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
                             }
-                        }
-                    });
-                }
-
-            }
-        });
+                    }
+             });
+        }
+    }
+});
         //关闭窗口的按钮
         btnCloseWindows.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -461,11 +491,36 @@ public class WindowsFragment extends Fragment {
                     btnOpenWindows.setVisibility(View.VISIBLE);
                     btnCloseWindows.setVisibility(View.GONE);
                 } else {
+                    MyApplication.openWindows = MyApplication.openWindows + 1;
                     btnCloseWindows.setVisibility(View.VISIBLE);
                     btnOpenWindows.setVisibility(View.GONE);
                 }
             }
         });
+    }
 
+    /**
+     * 获取该银行开启窗口的总数
+     */
+    private void getOpenWindowsCount(){
+        BmobQuery<Bank> query = new BmobQuery<Bank>();
+        query.addWhereEqualTo("state",true);
+        query.addWhereEqualTo("bankName",bankName);
+        query.findObjects(new FindListener<Bank>() {
+            @Override
+            public void done(List<Bank> list, BmobException e) {
+                if (e == null){
+                    MyApplication.openWindows = 0;
+                    Log.e("WindowsFragment", "list.size():" + list.size());
+                    for (Bank banks : list)  {
+                        MyApplication.openWindows = MyApplication.openWindows + 1;
+                        Log.e("WindowsFragment", banks.getObjectId());
+                    }
+                }   else {
+
+                }
+                Log.e("WindowsFragment", "3---" + MyApplication.openWindows);
+            }
+        });
     }
 }

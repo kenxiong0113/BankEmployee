@@ -13,7 +13,8 @@ public class PhoneNumber {
             phone==150||phone==151||phone==152||phone==153||phone==155||
             phone==156||phone==157||phone==158||phone==159||phone==147||
             phone==145||phone==180||phone==185||phone==186||phone==187||
-            phone==188||phone==189){
+            phone==188||phone==189||phone==182||phone == 181||phone == 183||
+                phone == 184){
             pn=true;
         }else {
             pn=false;
