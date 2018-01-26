@@ -15,9 +15,9 @@ import java.lang.Override;
 public class MyFragment_ViewBinding implements Unbinder {
   private MyFragment target;
 
-  private View view2131558616;
+  private View view2131558617;
 
-  private View view2131558615;
+  private View view2131558616;
 
   @UiThread
   public MyFragment_ViewBinding(final MyFragment target, View source) {
@@ -26,7 +26,7 @@ public class MyFragment_ViewBinding implements Unbinder {
     View view;
     view = Utils.findRequiredView(source, R.id.button, "field 'button' and method 'onClick'");
     target.button = Utils.castView(view, R.id.button, "field 'button'", Button.class);
-    view2131558616 = view;
+    view2131558617 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -35,7 +35,7 @@ public class MyFragment_ViewBinding implements Unbinder {
     });
     view = Utils.findRequiredView(source, R.id.btn_authentication, "field 'btnAuthentication' and method 'onClick'");
     target.btnAuthentication = Utils.castView(view, R.id.btn_authentication, "field 'btnAuthentication'", Button.class);
-    view2131558615 = view;
+    view2131558616 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -54,9 +54,9 @@ public class MyFragment_ViewBinding implements Unbinder {
     target.button = null;
     target.btnAuthentication = null;
 
+    view2131558617.setOnClickListener(null);
+    view2131558617 = null;
     view2131558616.setOnClickListener(null);
     view2131558616 = null;
-    view2131558615.setOnClickListener(null);
-    view2131558615 = null;
   }
 }

@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +15,11 @@ import android.widget.Button;
 import com.ruan.bankemployee.R;
 import com.ruan.bankemployee.activity.BankLocationActivity;
 import com.ruan.bankemployee.activity.LoginActivity;
+import com.ruan.bankemployee.adapter.MySelectAdapter;
+import com.ruan.bankemployee.javabean.MySelect;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -27,12 +35,8 @@ public class MyFragment extends Fragment {
 
     View view;
     static String ARG = "arg";
-    @BindView(R.id.button)
-    Button button;
     Unbinder unbinder;
-    @BindView(R.id.btn_authentication)
-    Button btnAuthentication;
-
+    List<MySelect> selects = new  ArrayList<MySelect>();
     public MyFragment() {
         super();
     }
@@ -49,7 +53,8 @@ public class MyFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_my, container, false);
-
+        initSelect();
+        setRecyclerView();
         unbinder = ButterKnife.bind(this, view);
         return view;
     }
@@ -90,23 +95,20 @@ public class MyFragment extends Fragment {
         super.onDestroy();
     }
 
-    @OnClick({R.id.button,R.id.btn_authentication})
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_authentication:
-                Intent intent = new Intent(getActivity(), BankLocationActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.button:
-                //清除缓存用户对象
-                BmobUser.logOut();
-                Intent intent1 = new Intent(getActivity(), LoginActivity.class);
-                startActivity(intent1);
-                getActivity().finish();
-                break;
-            default:
-                break;
-
+    private void initSelect(){
+        String[] s = new String[]{"认证身份","用户资料","退出登录"};
+        for (int i = 0; i < 3;i++){
+            MySelect select = new MySelect(s[i]);
+            selects.add(select);
         }
+    }
+
+    private void setRecyclerView(){
+        RecyclerView recyclerView = (RecyclerView)view.findViewById(R.id.rey_view);
+        LinearLayoutManager manager = new LinearLayoutManager(view.getContext());
+        recyclerView.setLayoutManager(manager);
+        MySelectAdapter adapter = new MySelectAdapter(selects,getActivity());
+        recyclerView.setAdapter(adapter);
+        adapter.notifyDataSetChanged();
     }
 }

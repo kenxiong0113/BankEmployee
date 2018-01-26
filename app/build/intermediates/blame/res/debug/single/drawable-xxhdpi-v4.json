@@ -12,12 +12,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_list_longpressed_holo.9.png"
     },
     {
-        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_ic_star_black_36dp.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_light.9.png"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png",
@@ -56,12 +56,12 @@
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_list_pressed_holo_dark.9.png"
     },
     {
-        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
-    },
-    {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_scrubber_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable-xxhdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\abc_ic_commit_search_api_mtrl_alpha.png",

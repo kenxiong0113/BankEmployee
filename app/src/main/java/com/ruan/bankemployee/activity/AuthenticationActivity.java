@@ -137,15 +137,16 @@ public class AuthenticationActivity extends BaseActivity {
                             @Override
                             public void done(BmobException e) {
                                 if (e == null) {
-                                    Toast.makeText(AuthenticationActivity.this, "提交成功", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(AuthenticationActivity.this,
+                                            "请求验证邮件成功，请到" + email + "邮箱中进行激活。",
+                                            Toast.LENGTH_LONG).show();
                                     rlInfo.setVisibility(View.VISIBLE);
+                                    btnCommit.setText("已提交");
                                     btnCommit.setEnabled(false);
                                 } else {
                                     Log.e("AuthenticationActivity", "创建数据失败：" + e.getMessage());
-
                                 }
-                                message.what = 0x0001;
-                                handler.sendMessage(message);
+                                progress.setVisibility(View.GONE);
                             }
                         });
                     }
@@ -157,29 +158,4 @@ public class AuthenticationActivity extends BaseActivity {
                 break;
         }
     }
-
-    public Handler handler = new Handler() {
-        @Override
-        public void handleMessage(Message msg) {
-            super.handleMessage(msg);
-            switch (msg.what) {
-                case 0x0001:
-                    progress.setVisibility(View.GONE);
-                    BmobUser.requestEmailVerify(email, new UpdateListener() {
-                        @Override
-                        public void done(BmobException e) {
-                            if (e == null) {
-                                Toast.makeText(AuthenticationActivity.this,
-                                        "请求验证邮件成功，请到" + email + "邮箱中进行激活。", Toast.LENGTH_SHORT).show();
-                            } else {
-                                Log.e("AuthenticationActivity", "失败:" + e.getMessage() + e.getErrorCode());
-                            }
-                        }
-                    });
-                    break;
-                default:
-                    break;
-            }
-        }
-    };
 }

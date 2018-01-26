@@ -105,7 +105,7 @@ public class WindowsFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_windows, container, false);
         unbinder = ButterKnife.bind(this, view);
-        context = getActivity().getApplicationContext();
+        context = view.getContext();
         progress.setVisibility(View.VISIBLE);
         fetchUserInfo();
         setSwipeRefreshLayout();
@@ -127,7 +127,6 @@ public class WindowsFragment extends Fragment {
                     try {
                         JSONObject object = new JSONObject(s);
                         bankName = object.getString("bankName");
-                        MyApplication.bankName = bankName;
                         if (object.getBoolean(identityVerified)) {
                             rLayoutYes.setVisibility(View.VISIBLE);
                             tvBank.setText(bankName);
@@ -137,6 +136,7 @@ public class WindowsFragment extends Fragment {
                             rLayoutNo.setVisibility(View.VISIBLE);
                         }
                     } catch (JSONException e1) {
+                        rLayoutNo.setVisibility(View.VISIBLE);
                         e1.printStackTrace();
                     } finally {
                         progress.setVisibility(View.GONE);
@@ -202,11 +202,9 @@ public class WindowsFragment extends Fragment {
                         }
                     });
                 } else {
-
                     adapter.setSelection(position);
                     adapter.notifyDataSetChanged();
                     selectTheWindowNumber = position;
-
                 }
             }
         });
@@ -260,9 +258,14 @@ public class WindowsFragment extends Fragment {
                             windows.add(bank);
                         }
                     }
-                    Message message = new Message();
-                    message.what = 0x0001;
-                    handler.sendMessage(message);
+                    if (sum != 0) {
+                        adapter = new BankWindowsAdapter(context, windows);
+                        gvWindows.setAdapter(adapter);
+                        adapter.notifyDataSetChanged();
+                        setGridViewListener();
+                    } else {
+                        setsTheDefaultWindowNumber();
+                    }
                 } else {
                     Log.e("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
                 }
@@ -381,6 +384,8 @@ public class WindowsFragment extends Fragment {
             @Override
             public void onRefresh() {
                 // TODO: 2018/1/10 设置刷新内容
+                windows.clear();
+                checkTheNumberOfWindowsInTheCurrentBank();
                 srl.setRefreshing(false);
             }
         });
@@ -390,21 +395,21 @@ public class WindowsFragment extends Fragment {
      * 设置按钮点击事件
      */
     private void setBtnWindows() {
-        //首先检查当前职员是否有窗口开启
-        getsAnOpenWindowForTheCurrentEmployee();
-        //开启窗口的按钮
-        btnOpenWindows.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (windows.get(selectTheWindowNumber).getImg() == R.drawable.ic_windows_open){
-                    Toast.makeText(context, "该窗口是打开的", Toast.LENGTH_SHORT).show();
-                }else {
-                    dialog = new ProgressDialog(getActivity());
-                    dialog.setMessage("正在开启......");
-                    dialog.setCancelable(true);
-                    dialog.show();
-                    Log.e("WindowsFragment", "1---" + MyApplication.openWindows);
-                    if (MyApplication.openWindows == 0){
+            //首先检查当前职员是否有窗口开启
+            getsAnOpenWindowForTheCurrentEmployee();
+            //开启窗口的按钮
+            btnOpenWindows.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (windows.get(selectTheWindowNumber).getImg() == R.drawable.ic_windows_open){
+                        Toast.makeText(context, "该窗口是打开的", Toast.LENGTH_SHORT).show();
+                    }else {
+                        dialog = new ProgressDialog(getActivity());
+                        dialog.setMessage("正在开启......");
+                        dialog.setCancelable(true);
+                        dialog.show();
+                        Log.e("WindowsFragment", "1---" + MyApplication.openWindows);
+                        if (MyApplication.openWindows == 0){
                             HeadCount headCount = new HeadCount();
                             headCount.setCount(0);
                             headCount.setBankName(bankName);
@@ -420,60 +425,82 @@ public class WindowsFragment extends Fragment {
                                 }
                             });
                         }
-                    BmobQuery<Bank> query = new BmobQuery<Bank>();
-                    query.addWhereEqualTo("bankName", bankName);
-                    query.addWhereEqualTo("windows", String.valueOf(selectTheWindowNumber + 1) + "号窗口");
-                    //执行查询方法
-                    query.findObjects(new FindListener<Bank>() {
-                        @Override
-                        public void done(List<Bank> object, BmobException e) {
-                            if (e == null) {
-                                windowsObjectId = object.get(0).getObjectId();
-                                Message message2 = new Message();
-                                message2.what = 0x0003;
-                                handler.sendMessage(message2);
-                            } else {
-                                dialog.dismiss();
-                                Log.e("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
+                        BmobQuery<Bank> query = new BmobQuery<Bank>();
+                        query.addWhereEqualTo("bankName", bankName);
+                        query.addWhereEqualTo("windows", String.valueOf(selectTheWindowNumber + 1) + "号窗口");
+                        //执行查询方法
+                        query.findObjects(new FindListener<Bank>() {
+                            @Override
+                            public void done(List<Bank> object, BmobException e) {
+                                if (e == null) {
+                                    windowsObjectId = object.get(0).getObjectId();
+                                    Message message2 = new Message();
+                                    message2.what = 0x0003;
+                                    handler.sendMessage(message2);
+                                } else {
+                                    dialog.dismiss();
+                                    Log.e("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
+                                }
                             }
+                        });
                     }
-             });
-        }
-    }
-});
-        //关闭窗口的按钮
-        btnCloseWindows.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-               if (windows.get(selectTheWindowNumber).getImg() == R.drawable.ic_windows_close) {
-                   Toast.makeText(context, "该窗口时关闭的", Toast.LENGTH_SHORT).show();
-                }else {
-                   dialog = new ProgressDialog(getActivity());
-                   dialog.setMessage("正在关闭......");
-                   dialog.setCancelable(true);
-                   dialog.show();
-                   BmobQuery<Bank> query = new BmobQuery<Bank>();
-                   //查询playerName叫“比目”的数据
-                   query.addWhereEqualTo("employeeObjectId", myObjectId);
-                   //执行查询方法
-                   query.findObjects(new FindListener<Bank>() {
-                       @Override
-                       public void done(List<Bank> object, BmobException e) {
-                           if (e == null) {
-                               windowsObjectId = object.get(0).getObjectId();
-                               Message message3 = new Message();
-                               message3.what = 0x0004;
-                               handler.sendMessage(message3);
-                           } else {
-                               dialog.dismiss();
-                               Log.e("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
-                           }
-                       }
-                   });
-               }
+                }
+            });
+            //关闭窗口的按钮
+            btnCloseWindows.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (windows.get(selectTheWindowNumber).getImg() == R.drawable.ic_windows_close) {
+                        Toast.makeText(context, "该窗口是关闭的", Toast.LENGTH_SHORT).show();
+                    }else {
+                        BmobQuery<Bank> query = new BmobQuery<Bank>();
+                        query.addWhereEqualTo("windows",windows.get(selectTheWindowNumber).getWindows());
+                        query.addWhereEqualTo("state",true);
+                        query.addWhereEqualTo("employeeObjectId",BmobUser.getCurrentUser().getObjectId());
+                        query.findObjects(new FindListener<Bank>() {
+                            @Override
+                            public void done(List<Bank> list, BmobException e) {
+                             if (e == null){
+                                 if (list.size() == 0){
+                                     Toast.makeText(context, "你无权关闭该窗口", Toast.LENGTH_SHORT).show();
+                                 }else {
+                                     dialog = new ProgressDialog(getActivity());
+                                     dialog.setMessage("正在关闭......");
+                                     dialog.setCancelable(true);
+                                     dialog.show();
+                                     BmobQuery<Bank> query = new BmobQuery<Bank>();
+                                     //查询playerName叫“比目”的数据
+                                     query.addWhereEqualTo("employeeObjectId", myObjectId);
+                                     //执行查询方法
+                                     query.findObjects(new FindListener<Bank>() {
+                                         @Override
+                                         public void done(List<Bank> object, BmobException e) {
+                                             if (e == null) {
+                                                 windowsObjectId = object.get(0).getObjectId();
+                                                 Message message3 = new Message();
+                                                 message3.what = 0x0004;
+                                                 handler.sendMessage(message3);
+                                             } else {
+                                                 dialog.dismiss();
+                                                 Toast.makeText(context, e.getMessage() + e.getErrorCode(),
+                                                         Toast.LENGTH_SHORT).show();
+                                                 Log.e("bmob", "失败：" + e.getMessage() + "," + e.getErrorCode());
+                                             }
+                                         }
+                                     });
+                                 }
+                             }else {
+                                 Toast.makeText(context, e.getMessage() + e.getErrorCode(),
+                                         Toast.LENGTH_SHORT).show();
+                                 Log.d("WindowsFragment", e.getMessage() + e.getErrorCode());
+                             }
+                            }
+                        });
 
-            }
-        });
+                    }
+
+                }
+            });
     }
     /**
      * 获取当前职员是否有开启窗口，避免多次开启
@@ -487,14 +514,21 @@ public class WindowsFragment extends Fragment {
         query.findObjects(new FindListener<Bank>() {
             @Override
             public void done(List<Bank> list, BmobException e) {
-                if (list.size() == 0) {
-                    btnOpenWindows.setVisibility(View.VISIBLE);
-                    btnCloseWindows.setVisibility(View.GONE);
-                } else {
-                    MyApplication.openWindows = MyApplication.openWindows + 1;
-                    btnCloseWindows.setVisibility(View.VISIBLE);
-                    btnOpenWindows.setVisibility(View.GONE);
+                if (e == null){
+                    if (list.size() == 0) {
+                        btnOpenWindows.setVisibility(View.VISIBLE);
+                        btnCloseWindows.setVisibility(View.GONE);
+                    } else {
+                        MyApplication.openWindows = MyApplication.openWindows + 1;
+                        btnCloseWindows.setVisibility(View.VISIBLE);
+                        btnOpenWindows.setVisibility(View.GONE);
+                    }
+                }else {
+                    Log.e("WindowsFragment", e.getErrorCode() + e.getMessage());
+                    Toast.makeText(context, e.getMessage() + e.getErrorCode(), Toast.LENGTH_SHORT).show();
+
                 }
+
             }
         });
     }
@@ -515,12 +549,14 @@ public class WindowsFragment extends Fragment {
                     for (Bank banks : list)  {
                         MyApplication.openWindows = MyApplication.openWindows + 1;
                         Log.e("WindowsFragment", banks.getObjectId());
-                    }
-                }   else {
 
+                    }
+                } else {
+                    Log.e("WindowsFragment", e.getMessage() + e.getErrorCode());
                 }
-                Log.e("WindowsFragment", "3---" + MyApplication.openWindows);
+
             }
         });
     }
+
 }

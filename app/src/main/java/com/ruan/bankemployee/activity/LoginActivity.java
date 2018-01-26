@@ -20,6 +20,7 @@ import com.ruan.bankemployee.util.PhoneNumber;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import cn.bmob.v3.Bmob;
 import cn.bmob.v3.BmobUser;
 import cn.bmob.v3.exception.BmobException;
 import cn.bmob.v3.listener.SaveListener;
@@ -43,7 +44,7 @@ public class LoginActivity extends BaseActivity {
     Context context;
     @BindView(R.id.progress)
     ProgressBar progress;
-
+    BmobUser bmobUser;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,12 +59,13 @@ public class LoginActivity extends BaseActivity {
     @Override
     protected void init(Bundle savedInstanceState) {
         ButterKnife.bind(this);
+        bmobUser = BmobUser.getCurrentUser();
         context = getApplicationContext();
         setTitle("登录");
     }
 
-    @OnClick({R.id.tv_register, R.id.btn_login})
 
+    @OnClick({R.id.tv_register, R.id.btn_login})
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.tv_register:

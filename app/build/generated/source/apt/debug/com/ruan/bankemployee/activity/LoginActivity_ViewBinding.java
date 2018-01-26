@@ -18,9 +18,9 @@ import java.lang.Override;
 public class LoginActivity_ViewBinding implements Unbinder {
   private LoginActivity target;
 
-  private View view2131558564;
+  private View view2131558565;
 
-  private View view2131558566;
+  private View view2131558567;
 
   @UiThread
   public LoginActivity_ViewBinding(LoginActivity target) {
@@ -36,7 +36,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.etPassword = Utils.findRequiredViewAsType(source, R.id.et_password, "field 'etPassword'", EditText.class);
     view = Utils.findRequiredView(source, R.id.btn_login, "field 'btnLogin' and method 'onClick'");
     target.btnLogin = Utils.castView(view, R.id.btn_login, "field 'btnLogin'", Button.class);
-    view2131558564 = view;
+    view2131558565 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -46,7 +46,7 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.tvForget = Utils.findRequiredViewAsType(source, R.id.tv_forget, "field 'tvForget'", TextView.class);
     view = Utils.findRequiredView(source, R.id.tv_register, "field 'tvRegister' and method 'onClick'");
     target.tvRegister = Utils.castView(view, R.id.tv_register, "field 'tvRegister'", TextView.class);
-    view2131558566 = view;
+    view2131558567 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -70,9 +70,9 @@ public class LoginActivity_ViewBinding implements Unbinder {
     target.tvRegister = null;
     target.progress = null;
 
-    view2131558564.setOnClickListener(null);
-    view2131558564 = null;
-    view2131558566.setOnClickListener(null);
-    view2131558566 = null;
+    view2131558565.setOnClickListener(null);
+    view2131558565 = null;
+    view2131558567.setOnClickListener(null);
+    view2131558567 = null;
   }
 }

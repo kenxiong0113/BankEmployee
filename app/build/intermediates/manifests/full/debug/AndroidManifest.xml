@@ -63,6 +63,7 @@
         <activity android:name="com.ruan.bankemployee.activity.AuthenticationActivity" />
         <activity android:name="com.ruan.bankemployee.activity.ToAuditActivity" />
         <activity android:name="com.ruan.bankemployee.activity.AuditResultActivity" />
+        <activity android:name="com.ruan.bankemployee.activity.FixInfoActivity" />
     </application>
 
 </manifest>

@@ -4,30 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_authentication"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="认证身份"
-        android:layout_above="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:layout_marginBottom="60dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="退出登录" />
-
-    <Button
-        android:id="@+id/btn_modified_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button"
-        android:layout_alignStart="@+id/button"
-        android:text="修改资料" />
-
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rey_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="4dp"
+        >
+    </android.support.v7.widget.RecyclerView>
 
 </RelativeLayout>

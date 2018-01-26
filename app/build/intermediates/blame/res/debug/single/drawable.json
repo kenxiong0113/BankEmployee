@@ -9,15 +9,15 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_normal.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_cancel_bg_normal.xml"
-    },
-    {
-        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\drawable\\design_snackbar_background.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_cancel_bg_normal.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_password.xml",
@@ -33,7 +33,7 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_check_selector.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_check_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_check_selector.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
@@ -45,19 +45,19 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_wifi_disable.png",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_wifi_disable.png"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_wifi_disable.png"
     },
     {
-        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\\output\\res\\drawable\\navigation_empty_icon.xml"
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_sharp.xml",
@@ -100,12 +100,12 @@
         "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\drawable\\ic_location.xml"
     },
     {
-        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\abc_text_cursor_material.xml"
-    },
-    {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_delete.xml",
         "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\drawable\\ic_delete.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\abc_text_cursor_material.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_go_search_api_material.xml",
@@ -113,7 +113,7 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_tap.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_cancel_bg_tap.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_cancel_bg_tap.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_top_material.xml",
@@ -133,7 +133,7 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_focused.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_ok_bg_focused.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_ok_bg_focused.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
@@ -145,7 +145,7 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_tap.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_ok_bg_tap.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_ok_bg_tap.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_windows_open.xml",
@@ -169,15 +169,19 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_close_bg_selector.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_close_bg_selector.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_dark.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_x.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\drawable\\ic_x.xml"
+    },
+    {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_selector.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_ok_bg_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_ok_bg_selector.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
@@ -189,7 +193,7 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_ok_bg_normal.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_ok_bg_normal.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_ok_bg_normal.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_bank36.xml",
@@ -213,11 +217,11 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_focused.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_cancel_bg_focused.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_cancel_bg_focused.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_button_cancel_bg_selector.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_button_cancel_bg_selector.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_button_cancel_bg_selector.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
@@ -237,7 +241,7 @@
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bmob_update_dialog_bg.xml",
-        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\\output\\res\\drawable\\bmob_update_dialog_bg.xml"
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\\output\\res\\drawable\\bmob_update_dialog_bg.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
@@ -274,6 +278,10 @@
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_vector_test.xml",
         "source": "C:\\Users\\Administrator\\.android\\build-cache\\ee8775536a0c64d96fdf9ae779598ddf20426d31\\output\\res\\drawable\\abc_vector_test.xml"
+    },
+    {
+        "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_chevron_right_24dp.xml",
+        "source": "F:\\AndroidStdioProject\\BankEmployee\\app\\src\\main\\res\\drawable\\ic_chevron_right_24dp.xml"
     },
     {
         "merged": "F:\\AndroidStdioProject\\BankEmployee\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",

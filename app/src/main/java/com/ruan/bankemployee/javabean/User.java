@@ -12,6 +12,10 @@ public class User extends BmobUser{
     private String bankName;
     private boolean commit;
     private boolean pendingTrial;
+    private boolean identityVerified;
+    private String age;
+    private String officePhone;
+    private String number;
 
     public boolean isPendingTrial() {
         return pendingTrial;
@@ -36,8 +40,6 @@ public class User extends BmobUser{
     public void setBankName(String bankName) {
         this.bankName = bankName;
     }
-
-    private boolean identityVerified;
 
     public boolean isIdentityVerified() {
         return identityVerified;
@@ -87,7 +89,5 @@ public class User extends BmobUser{
         this.number = number;
     }
 
-    private String age;
-    private String officePhone;
-    private String number;
+
 }

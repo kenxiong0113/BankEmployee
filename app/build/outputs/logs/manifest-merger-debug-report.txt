@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:2:1-58:12
+ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:2:1-59:12
 	package
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:3:5-36
 		INJECTED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml
@@ -50,8 +50,8 @@ ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:22:22-73
 application
-ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:24:5-56:19
-MERGED from [cn.bmob.android:bmob-sdk:3.5.8] C:\Users\Administrator\.android\build-cache\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\output\AndroidManifest.xml:11:5-14:19
+ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:24:5-57:19
+MERGED from [cn.bmob.android:bmob-sdk:3.5.9] C:\Users\Administrator\.android\build-cache\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\output\AndroidManifest.xml:11:5-14:19
 MERGED from [com.ashokvarma.android:bottom-navigation-bar:1.3.0] C:\Users\Administrator\.android\build-cache\04c3a806e2dfd803af18372e4224cb3aeaa8bc08\output\AndroidManifest.xml:11:5-13:38
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:transition:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\cf275a9ebcd7cb7dc00fb99adb7d70cade249dc2\output\AndroidManifest.xml:26:5-20
@@ -65,6 +65,7 @@ MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\User
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\7a3e36eea3dc42d7f599852a705fc4eb9bea8572\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\eaa06cd57601d9181d812e9aa2923a1d7199dfbc\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\a6692df008293b02403d82b77689b819b980002a\output\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\0c455b9dbb10ec87233942575b5db0b2ae126100\output\AndroidManifest.xml:26:5-20
 	android:label
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:28:9-41
 	android:supportsRtl
@@ -72,13 +73,13 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Ad
 	android:roundIcon
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:29:9-54
 	android:allowBackup
-		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:25:9-35
+		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:26:9-35
 	android:icon
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:27:9-43
 	android:theme
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:31:9-40
 	android:name
-		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:26:9-71
+		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:25:9-50
 activity#com.ruan.bankemployee.activity.WelcomeActivity
 ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:32:9-40:20
 	android:label
@@ -134,12 +135,16 @@ ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:
 	android:name
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:54:19-59
 activity#com.ruan.bankemployee.activity.AuditResultActivity
-ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:55:9-75
+ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:55:9-66
 	android:name
 		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:55:19-63
+activity#com.ruan.bankemployee.activity.FixInfoActivity
+ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:56:9-71
+	android:name
+		ADDED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml:56:19-59
 uses-sdk
 INJECTED from F:\AndroidStdioProject\BankEmployee\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [cn.bmob.android:bmob-sdk:3.5.8] C:\Users\Administrator\.android\build-cache\e9b1c9b11c9aa7bb574a0d82d2463a3e4442ac8c\output\AndroidManifest.xml:7:5-9:41
+MERGED from [cn.bmob.android:bmob-sdk:3.5.9] C:\Users\Administrator\.android\build-cache\e402e4b49c4d729a40dd20c8cc62b4f9ef768d3a\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.ashokvarma.android:bottom-navigation-bar:1.3.0] C:\Users\Administrator\.android\build-cache\04c3a806e2dfd803af18372e4224cb3aeaa8bc08\output\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.support:design:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\f1a2dd11b76877a7e6b125989ec37360ecea3a67\output\AndroidManifest.xml:20:5-44
@@ -155,6 +160,7 @@ MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users
 MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\Administrator\.android\build-cache\884efafbe6589417e00d830383455131feacc42a\output\AndroidManifest.xml:5:5-43
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\eaa06cd57601d9181d812e9aa2923a1d7199dfbc\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\Administrator\.android\build-cache\a6692df008293b02403d82b77689b819b980002a\output\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\0c455b9dbb10ec87233942575b5db0b2ae126100\output\AndroidManifest.xml:20:5-44
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
@@ -176,6 +182,7 @@ MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\Admi
 MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\e1ad4fa6ab4f9e9ba25a1c1f069ce1d3e5ded8e1\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\7a3e36eea3dc42d7f599852a705fc4eb9bea8572\output\AndroidManifest.xml:22:5-24:41
 MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\eaa06cd57601d9181d812e9aa2923a1d7199dfbc\output\AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\0c455b9dbb10ec87233942575b5db0b2ae126100\output\AndroidManifest.xml:22:5-24:41
 	android:value
 		ADDED from [com.android.support:design:26.0.0-alpha1] C:\Users\Administrator\.android\build-cache\ef24ecebdc433ba775f4e8736f78a49aaf3bab79\output\AndroidManifest.xml:27:9-38
 	android:name

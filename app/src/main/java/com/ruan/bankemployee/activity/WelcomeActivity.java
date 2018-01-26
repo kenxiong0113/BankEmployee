@@ -43,47 +43,10 @@ public class WelcomeActivity extends AppCompatActivity {
     Button btnJump;
     Context context;
     BmobUser bmobUser;
-    BmobFile file;
     @BindView(R.id.img_picture)
     ImageView imgPicture;
-    Message message = new Message();
     @BindView(R.id.progress)
     ProgressBar progress;
-    private Handler handler = new Handler(new Handler.Callback() {
-
-        @Override
-        public boolean handleMessage(Message msg) {
-            switch (msg.what) {
-                case BaseConstants.MESSAGE_NETWORK_REQUEST_IMAGE:
-                    Bitmap bm = (Bitmap) msg.obj;
-                    imgPicture.setImageBitmap(bm);
-                    message.what = BaseConstants.MESSAGE_REQUEST_IMAGE_SUCCEE;
-                    handler.sendMessage(message);
-                    break;
-                case BaseConstants.MESSAGE_REQUEST_IMAGE_SUCCEE:
-                    progress.setVisibility(View.GONE);
-                    jump();
-                    break;
-                case BaseConstants.MESSAGE_REQUEST_IMAGE_FAILEURE:
-                    progress.setVisibility(View.GONE);
-                    checkTheUserCache();
-                    Toast.makeText(context, "加载图片失败", Toast.LENGTH_SHORT).show();
-                    break;
-
-                case BaseConstants.MESSAGE_USER_CACHE_EXISTS:
-                    // TODO: 2017/12/16 用户缓存不为空
-                    break;
-                case BaseConstants.MESSAGE_USER_CACHE_INEXISTENCE:
-                    // TODO: 2017/12/16 用户缓存为空
-                    break;
-
-                default:
-                    break;
-            }
-
-            return false;
-        }
-    });
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -94,21 +57,9 @@ public class WelcomeActivity extends AppCompatActivity {
         context = getApplicationContext();
         bmobUser = BmobUser.getCurrentUser();
         progress.setVisibility(View.VISIBLE);
-        initStartThePictures();
-        btnJump.setVisibility(View.GONE);
-    }
+        checkTheUserCache();
 
-    @OnClick({R.id.btn_jump})
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.btn_jump:
-                checkTheUserCache();
-                break;
-            default:
-                break;
-        }
     }
-
     /**
      * 检查用户缓存
      */
@@ -127,38 +78,6 @@ public class WelcomeActivity extends AppCompatActivity {
     }
 
     /**
-     * 获取启动页图片
-     */
-    private void initStartThePictures() {
-        BmobQuery bmobQuery = new BmobQuery();
-        bmobQuery.findObjects(new FindListener<WelcomePicture>() {
-            @Override
-            public void done(List<WelcomePicture> object, BmobException e) {
-                if (e == null) {
-                    for (WelcomePicture picture : object) {
-                        BmobFile bmobfile = picture.getPicture();
-                        String url = bmobfile.getUrl();
-                        file = new BmobFile(new File(url));
-                        if (file != null) {
-                            GetPicThread gpt = new GetPicThread(url, handler);
-                            Thread t = new Thread(gpt);
-                            t.start();
-                            //调用bmobfile.download方法
-                        } else {
-                            message.what = BaseConstants.MESSAGE_REQUEST_IMAGE_FAILEURE;
-                            handler.sendMessage(message);
-                        }
-                    }
-                } else {
-                    checkTheUserCache();
-                    Toast.makeText(context, "加载广告页失败" + e.getMessage(), Toast.LENGTH_SHORT).show();
-                }
-            }
-        });
-    }
-
-
-    /**
      * 按两次返回退出程序
      */
     @Override
@@ -169,19 +88,4 @@ public class WelcomeActivity extends AppCompatActivity {
             finish();
         }
     }
-
-    private void jump(){
-        btnJump.setVisibility(View.VISIBLE);
-        new CountDownTimer(2000, 1000) {
-            @Override
-            public void onTick(long millisUntilFinished) {
-                btnJump.setText(String.format("跳过(%ds)", millisUntilFinished / 1000));
-            }
-            @Override
-            public void onFinish() {
-               checkTheUserCache();
-            }
-        }.start();
-    }
-
 }

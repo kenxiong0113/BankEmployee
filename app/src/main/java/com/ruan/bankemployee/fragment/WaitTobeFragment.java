@@ -44,16 +44,13 @@ public class WaitTobeFragment extends Fragment {
     TextView bankNameWindowsId;
     @BindView(R.id.queue_num)
     TextView queueNum;
-    @BindView(R.id.num)
-    TextView num;
     @BindView(R.id.tv_personal)
     TextView tvPersonal;
     @BindView(R.id.r_layout)
     RelativeLayout rLayout;
     @BindView(R.id.present_num)
     TextView presentNum;
-    @BindView(R.id.tv_present)
-    TextView tvPresent;
+
     @BindView(R.id.btn_next)
     Button btnNext;
     @BindView(R.id.rl_wait_to_be)
@@ -66,6 +63,8 @@ public class WaitTobeFragment extends Fragment {
     @BindView(R.id.progress)
     ProgressBar progress;
     private String myObjectId;
+    TextView num;
+    TextView tvPresent;
     /**
      * 当前排队的Objectid
      */
@@ -87,6 +86,7 @@ public class WaitTobeFragment extends Fragment {
                              Bundle savedInstanceState) {
         view = inflater.inflate(R.layout.fragment_wait_to_be, container, false);
         unbinder = ButterKnife.bind(this, view);
+        initWidget();
         getPresentWindowsId();
         setBtnListener();
         //定时刷新，一分钟刷新
@@ -120,10 +120,6 @@ public class WaitTobeFragment extends Fragment {
         super.onStop();
     }
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-    }
 
     private void getPresentWindowsId() {
         progress.setVisibility(View.VISIBLE);
@@ -145,6 +141,7 @@ public class WaitTobeFragment extends Fragment {
                     }
 
                 } else {
+                    Toast.makeText(getActivity(), e.getErrorCode() + e.getMessage(), Toast.LENGTH_SHORT).show();
                     Log.e("WaitTobeFragment", e.getErrorCode() + e.getMessage());
                 }
                 progress.setVisibility(View.GONE);
@@ -167,13 +164,18 @@ public class WaitTobeFragment extends Fragment {
         }
     };
 
+    private void initWidget(){
+        num = (TextView) view.findViewById(R.id.num);
+        tvPresent = (TextView)view.findViewById(R.id.tv_present);
+    }
+
     /**
      *  获取当前排队人数和当前的排号码
      */
 
     private void getQueueSum(){
+        initWidget();
         BmobQuery<Queue> query = new BmobQuery<Queue>();
-        Log.e("WaitTobeFragment", MyApplication.bankName);
         query.addWhereEqualTo("bankName", MyApplication.bankName);
         query.addWhereNotEqualTo("state",false);
         query.order("-createdAt");
@@ -181,9 +183,6 @@ public class WaitTobeFragment extends Fragment {
             @Override
             public void done(List<Queue> list, BmobException e) {
              if (e == null){
-                 for (Queue queue:list){
-                     Log.e("WaitTobeFragment", queue.getObjectId());
-                 }
                  if (list.size() == 0){
                     num.setText("暂无");
                     num.setTextColor(getResources().getColor(R.color.red));
@@ -202,6 +201,7 @@ public class WaitTobeFragment extends Fragment {
                      }
                  }
              }else {
+                 Toast.makeText(getActivity(), e.getMessage() + e.getErrorCode(), Toast.LENGTH_SHORT).show();
                  Log.e("WaitTobeFragment", e.getMessage());
              }
             }
@@ -222,7 +222,7 @@ public class WaitTobeFragment extends Fragment {
                         if (e == null){
                             getQueueSum();
                         }else {
-                            Toast.makeText(getActivity(), e.getMessage(), Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getActivity(), e.getMessage()+e.getErrorCode(), Toast.LENGTH_SHORT).show();
                             Log.e("QueueActivity", "e.getErrorCode():" + e.getErrorCode());
                         }
                         progress.setVisibility(View.GONE);
